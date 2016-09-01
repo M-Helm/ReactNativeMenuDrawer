@@ -23,6 +23,12 @@ The menu array holds the dictionaries with 'Titles'
 that will show up as text in our drawer menu and then
 the components to be rendered when they're selected.
 */
+var menuArray = [
+  {title: 'Home', component: <LandingPage/>},
+  {title: 'WebView Example', component: <WebViewPage/>},
+  {title: 'ListView Example', component: <ListViewPage/>},
+  {title: 'Detail Page', component: <DetailPage/>},
+];
 
 var NavigationParent = React.createClass({
   getInitialState() {
