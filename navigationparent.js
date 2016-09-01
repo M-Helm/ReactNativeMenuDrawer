@@ -1,10 +1,6 @@
 'use strict';
 
 import React, { Component } from 'react';
-var LandingPage = require('./landingpage');
-var DetailPage = require('./detailpage');
-var WebViewPage = require('./webviewpage');
-var ListViewPage = require('./listviewpage');
 
 import {
   AppRegistry,
