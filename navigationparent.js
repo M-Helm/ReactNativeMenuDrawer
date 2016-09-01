@@ -17,12 +17,16 @@ import {
   ListView,
 } from 'react-native';
 
-var menuArray = [
-  {title: 'Home', component: <LandingPage/>},
-  {title: 'WebView Example', component: <WebViewPage/>},
-  {title: 'ListView Example', component: <ListViewPage/>},
-  {title: 'Detail Page', component: <DetailPage/>},
-];
+/*We get our various component files here*/
+var LandingPage = require('./landingpage');
+var DetailPage = require('./detailpage');
+var WebViewPage = require('./webviewpage');
+var ListViewPage = require('./listviewpage');
+/*
+The menu array holds the dictionaries with 'Titles'
+that will show up as text in our drawer menu and then
+the components to be rendered when they're selected.
+*/
 
 var NavigationParent = React.createClass({
   getInitialState() {
